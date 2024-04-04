@@ -36,3 +36,43 @@ P2Pネットワークは以下の技術とプロトコルを活用します:
 このP2Pファイル共有プラットフォームの開発は、ユーザーフィードバックと継続的な改善に重点を置いた反復的なプロセスになります。このプロジェクトは、P2P技術の利点を活用しつつ、ファイル共有に関連する社会的・法的課題に取り組むことを目指しています。
 
 Winnyの経験から学び、最新のテクノロジーと設計原則を取り入れることで、安全で効率的で社会的責任を果たすファイル共有プラットフォームを作り上げたいと考えています。このプロジェクトは、法律の専門家、プライバシー擁護者、オープンソースコミュニティと積極的にコラボレーションを求め、長期的な持続可能性とポジティブな影響を確保していきます。
+
+----
+
+p2p-file-sharing/
+├── backend/
+│   ├── src/
+│   │   ├── main.rs
+│   │   ├── p2p/
+│   │   │   ├── mod.rs
+│   │   │   ├── kademlia.rs
+│   │   │   └── libp2p.rs
+│   │   ├── storage/
+│   │   │   ├── mod.rs
+│   │   │   └── encrypted_storage.rs
+│   │   └── api/
+│   │       ├── mod.rs
+│   │       └── handlers.rs
+│   ├── Cargo.toml
+│   └── Cargo.lock
+├── desktop/
+│   ├── src/
+│   │   └── main.rs
+│   ├── Cargo.toml
+│   └── Cargo.lock
+├── mobile/
+│   ├── lib/
+│   │   ├── main.dart
+│   │   └── src/
+│   │       └── app.dart
+│   ├── android/
+│   └── ios/
+├── web/
+│   ├── src/
+│   │   ├── index.js
+│   │   ├── App.js
+│   │   └── components/
+│   ├── public/
+│   │   └── index.html
+│   └── package.json
+└── README.md
